@@ -1,0 +1,32 @@
+<div *ngIf="show" class="alert alert-success alert-dismissible fade show" role="alert">
+  <strong>Guest is successfully deleted!</strong>
+  <button (click)="off()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+<h3>All Guest List</h3>
+<table class="table" style="background-color: rgb(245, 244, 244);">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Name</th>
+        <th scope="col">E-mail</th>
+        <th scope="col">Mobile No.</th>
+        <th scope="col">Address</th>
+        <th scope="col">Edit</th>
+        <th scope="col">Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of allData">
+        <td>{{item.id}}</td>
+        <td>{{item.fullName}}</td>
+        <td>{{item.emailAddress}}</td>
+        <td>{{item.mobileNumber}}</td>
+        <td>{{item.guestAddress}}</td>
+      <td><a routerLink="/update/{{item.id}}" class="btn btn-warning">Edit</a></td>
+      <td><button class="btn btn-danger" (click)="guestDelete(item.id)">Delete</button></td>
+      </tr>
+    </tbody>
+  </table>
+ 

@@ -1,0 +1,32 @@
+{
+  "users": [
+    {
+      "fullName": "Tanzeem Nizami",
+      "emailAddress": "tanzeemnizami755@gmail.com",
+      "mobileNumber": "9149343173",
+      "guestAddress": "mansoorpur",
+      "id": 1
+    },
+    {
+      "fullName": "Tanzeem Alam",
+      "emailAddress": "tanzeemnizami755@gmail.com",
+      "mobileNumber": "9149343173",
+      "guestAddress": "mansoorpur",
+      "id": 2
+    },
+    {
+      "fullName": "Tanzeem",
+      "emailAddress": "tanzeemnizami755@gmail.com",
+      "mobileNumber": "9149343173",
+      "guestAddress": "mansoorpur",
+      "id": 3
+    },
+    {
+      "fullName": "Tanzeem Alam",
+      "emailAddress": "tanzeemnizami755@gmail.com",
+      "mobileNumber": "9149343173",
+      "guestAddress": "Sambhal",
+      "id": 4
+    }
+  ]
+}

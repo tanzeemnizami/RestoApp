@@ -1,0 +1,62 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+  <a class="navbar-brand" href="#">RESTOAPP</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/add">Add</a>
+      <a class="nav-item nav-link" routerLink="/list">List</a>
+      <a class="nav-item nav-link" routerLink="/update/:id">Update</a>
+      <a class="nav-item nav-link" routerLink="/login">Login</a>
+    </div>
+  </div>
+</div>
+</nav>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
+<!-- <div class="container-fluid">
+  <div class="row">
+    <div class="col-md-5">
+      <form #userData="ngForm">
+        <h3>Registration Form</h3>
+        <input type="text" name="firstName" placeholder="First Name" [(ngModel)]="userObj.fName"><br><br>
+        <input type="text" name="lastName" placeholder="Last Name" [(ngModel)]="userObj.lName"><br><br>
+        <input type="email" name="emailAddress" placeholder="E-mail" [(ngModel)]="userObj.eAddress"><br><br>
+        <input type="password" name="psswrd" placeholder="Password" [(ngModel)]="userObj.pswrd"><br><br>
+         <button (click)="getData(userData.value)" class="btn-form">Submit</button>
+
+      </form>
+    </div>
+    <div class="col-md-7">
+      <h3>All Users List</h3>
+    <table class="table table-dark">
+        <thead>
+          <tr>
+            <th scope="col">Id</th>
+            <th scope="col">First Name</th>
+            <th scope="col">Last Name</th>
+            <th scope="col">E-mail Address</th>
+            <th scope="col">Password</th>
+            <th scope="col">Edit</th>
+            <th scope="col">Delete</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let item of saveAll">
+            <td>{{item.id}}</td>
+           <td>{{item.firstName}}</td>
+           <td>{{item.lastName}}</td>
+           <td>{{item.emailAddress}}</td>
+           <td>{{item.psswrd}}</td>
+           <td><button class="btn btn-warning" (click)="edt(item)">Edit</button></td>
+           <td><button class="btn btn-danger" (click)="del(item)">Delete</button></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div> -->

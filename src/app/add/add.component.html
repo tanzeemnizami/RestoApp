@@ -1,0 +1,14 @@
+<div *ngIf="show" class="alert alert-success alert-dismissible fade show" role="alert">
+    <strong>Guest is successfully added!</strong>
+    <button (click)="off()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
+<h3>Add New Guest</h3>
+<form [formGroup]="profileForm" (ngSubmit)="onSubmit()">
+    <input class="form-control" type="text" formControlName="fullName" placeholder="Name" ><br><br>
+    <input class="form-control" type="email" formControlName="emailAddress" placeholder="E-mail" ><br><br>
+    <input class="form-control" type="text" formControlName="mobileNumber" placeholder="Mobile No." ><br><br>
+    <input class="form-control" type="text" formControlName="guestAddress" placeholder="Address" ><br><br>
+     <button class="btn btn-primary">Submit</button>
+</form>
